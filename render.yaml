@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: my-webservice
+    env: docker
+    dockerfilePath: Dockerfile        # caminho para o seu Dockerfile
+    repo: https://github.com/alexozekoski/FileShareWebServer.git  # link do repositório público
+    branch: main                      # branch a ser usado
+    plan: free                        # plano (free ou paid)
+    autoDeploy: true                  # deploy automático ao atualizar o repo
+    ports:
+      - 9000                          # porta que o container expõe
