@@ -2,4 +2,4 @@ FROM openjdk:24-jdk
 
 WORKDIR /app
 
-CMD ["java", "-jar", "store/app.jar"]
+CMD ["java", "-jar", "app/store/app.jar"]
